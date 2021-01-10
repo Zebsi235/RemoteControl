@@ -8,11 +8,12 @@
 #ifndef STEREOCD_H
 #define STEREOCD_H
 
+#include "Object.h"
 #include "Device.h"
 #include <fstream>
 #include "TStateCD.h"
 
-class StereoCD : public Device
+class StereoCD : public Device, public Object
 {
 public:
 	void Info(std::ostream& ost) const override;

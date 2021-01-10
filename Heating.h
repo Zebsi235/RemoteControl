@@ -8,11 +8,12 @@
 #ifndef HEATING_H
 #define HEATING_H
 
+#include "Object.h"
 #include <fstream>
 #include "Device.h"
 #include "TStatePower.h"
 
-class Heating : public Device
+class Heating : public Device, public Object
 {
 public:
 	void Info(std::ostream& ost) const override;

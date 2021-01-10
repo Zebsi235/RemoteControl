@@ -8,10 +8,11 @@
 #ifndef TV_H
 #define TV_H
 
+#include "Object.h"
 #include "Device.h"
 #include <fstream>
 
-class TV : public Device
+class TV : public Device, public Object
 {
 public:
 	void Info(std::ostream& ost) const override;

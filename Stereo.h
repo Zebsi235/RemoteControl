@@ -8,13 +8,14 @@
 #ifndef STEREO_H
 #define STEREO_H
 
+#include "Object.h"
 #include "Device.h"
 #include "StereoCD.h"
 #include <fstream>
 #include "TStatePower.h"
 
 
-class Stereo : public Device
+class Stereo : public Device, public Object
 {
 public:
 	Stereo(StereoCD::SPtr const& cd);
