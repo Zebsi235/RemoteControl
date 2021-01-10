@@ -1,6 +1,6 @@
 //////////////////////////////////////////
 // Workfile : Button.cpp
-// Author : Michael Enzelsberger
+// Author : Sebastian Mueck
 // Date : 09.01.2021
 // Description : Implementation for Buttons.
 //////////////////////////////////////////

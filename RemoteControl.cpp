@@ -1,6 +1,6 @@
 //////////////////////////////////////////
 // Workfile : RemoteControl.cpp
-// Author : 
+// Author : Michael Enzelsberger
 // Date : 09.01.2021
 // Description : Invoker for remote control
 //////////////////////////////////////////
@@ -52,6 +52,11 @@ void RemoteControl::ProgramSlot(std::string const& slotName, size_t const slotNr
 	if (onCmd == nullptr || offCmd == nullptr)
 	{
 		throw string("null pointer in RemoteControl ProgramSlot");
+	}
+
+	if (slotNr == 0 || slotNr > numOfSlots)
+	{
+		throw string("slot number must be between 1 and 6");
 	}
 
 	mSlots[slotNr - 1].SetName(slotName);

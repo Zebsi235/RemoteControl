@@ -1,3 +1,11 @@
+//////////////////////////////////////////
+// Workfile : Client.cpp
+// Author : Michael Enzelsberger
+// Date : 09.01.2021
+// Description : Client that connects 
+//				 Devices to RemoteControl.
+//////////////////////////////////////////
+
 #include "Client.h"
 #include "Stereo.h"
 

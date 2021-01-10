@@ -18,9 +18,9 @@ public:
 	void SetOn(Command::SPtr const& cmd);
 	void SetOff(Command::SPtr const& cmd);
 	void SetName(std::string const& name);
-	Command::SPtr GetOn();
-	Command::SPtr GetOff();
-	std::string GetName();
+	Command::SPtr GetOn() const;
+	Command::SPtr GetOff() const;
+	std::string GetName() const;
 
 private:
 	Button mOn;

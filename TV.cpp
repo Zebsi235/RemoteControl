@@ -10,11 +10,9 @@
 
 using namespace std;
 
-string const output ="TV is ";
-
 void TV::Info(ostream& ost) const
 {
-	ost << output;
+	ost << "TV is ";
 
 	switch(mState){
 		case TStatePower::eOn: ost << "on" << endl;
@@ -23,7 +21,6 @@ void TV::Info(ostream& ost) const
 			break;
 	}
 }
-
 
 void TV::SetState(TStatePower const& state)
 {

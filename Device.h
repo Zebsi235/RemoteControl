@@ -2,7 +2,7 @@
 // Workfile : Device.h
 // Author : Pascal Lang
 // Date : 09.01.2021
-// Description : Header for Devices.
+// Description : Interface for Devices.
 //////////////////////////////////////////
 
 #ifndef DEVICE_H

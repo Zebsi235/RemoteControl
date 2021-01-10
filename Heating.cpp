@@ -9,11 +9,9 @@
 
 using namespace std;
 
-string const output = "Heating is ";
-
 void Heating::Info(std::ostream& ost) const
 {
-	ost << output;
+	ost << "Heating is ";
 
 	switch(mState){
 		case TStatePower::eOn: ost << "on" << endl;

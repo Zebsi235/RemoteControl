@@ -34,17 +34,17 @@ void Slot::SetName(std::string const& name)
 	mName = name;
 }
 
-Command::SPtr Slot::GetOn()
+Command::SPtr Slot::GetOn() const
 {
 	return mOn.GetCmd();
 }
 
-Command::SPtr Slot::GetOff()
+Command::SPtr Slot::GetOff() const
 {
 	return mOff.GetCmd();
 }
 
-std::string Slot::GetName()
+std::string Slot::GetName() const
 {
 	return mName;
 }

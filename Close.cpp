@@ -1,5 +1,5 @@
 //////////////////////////////////////////
-// Workfile : Close.h
+// Workfile : Close.cpp
 // Author : Michael Enzelsberger
 // Date : 09.01.2021
 // Description : Concrete Close Command.

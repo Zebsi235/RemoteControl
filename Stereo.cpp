@@ -1,17 +1,12 @@
 //////////////////////////////////////////
 // Workfile : Stereo.cpp
-// Author : Sebastian Mueck
+// Author : Pascal Lang
 // Date : 09.01.2021
 // Description : Implementation for concrete Device
 //////////////////////////////////////////
 
 #include "Stereo.h"
 #include <string>
-
-using namespace std;
-
-string const outputStereo = "Stereo is ";
-string const outputCD = "CD is ";
 
 using namespace std;
 
@@ -25,7 +20,7 @@ Stereo::Stereo(StereoCD::SPtr const& cd)
 
 void Stereo::Info(std::ostream& ost) const
 {
-	ost << outputStereo;
+	ost << "Stereo is ";
 
 	switch(mState){
 		case TStatePower::eOn: ost << "on ";
@@ -37,7 +32,7 @@ void Stereo::Info(std::ostream& ost) const
 
 	if (mCD_Unit != nullptr)
 	{
-		ost << outputCD;
+		ost << "CD is ";
 
 		switch (mCD_Unit->GetStateCD())
 		{
