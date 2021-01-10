@@ -139,36 +139,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Button.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="Close.cpp" />
-    <ClCompile Include="Command.cpp" />
-    <ClCompile Include="Device.cpp" />
     <ClCompile Include="Heating.cpp" />
-    <ClCompile Include="IDevice.cpp" />
-    <ClCompile Include="NoCommand.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Off.cpp" />
     <ClCompile Include="On.cpp" />
     <ClCompile Include="Open.cpp" />
     <ClCompile Include="RemoteControl.cpp" />
+    <ClCompile Include="Slot.cpp" />
     <ClCompile Include="Stereo.cpp" />
-    <ClCompile Include="TStateCD.cpp" />
-    <ClCompile Include="TStatePower.cpp" />
+    <ClCompile Include="StereoCD.cpp" />
     <ClCompile Include="TV.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Button.h" />
     <ClInclude Include="Client.h" />
     <ClInclude Include="Close.h" />
     <ClInclude Include="Command.h" />
     <ClInclude Include="Device.h" />
     <ClInclude Include="Heating.h" />
-    <ClInclude Include="IDevice.h" />
     <ClInclude Include="NoCommand.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="Off.h" />
     <ClInclude Include="On.h" />
     <ClInclude Include="Open.h" />
     <ClInclude Include="RemoteControl.h" />
+    <ClInclude Include="Slot.h" />
     <ClInclude Include="Stereo.h" />
+    <ClInclude Include="StereoCD.h" />
     <ClInclude Include="TStateCD.h" />
     <ClInclude Include="TStatePower.h" />
     <ClInclude Include="TV.h" />
