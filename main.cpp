@@ -52,6 +52,7 @@ int main()
 		while (true)
 		{
 			getline(cin, input);
+			slot = 0;
 
 			if (input.length() == 2)
 			{
@@ -77,6 +78,7 @@ int main()
 					break;
 				default:
 					slot = 0;
+					cout << "slot number must be between 1 and 6!" << endl;
 					break;
 				}
 
