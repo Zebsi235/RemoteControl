@@ -16,8 +16,11 @@
 class Heating : public Device, public Object
 {
 public:
+	//Print function
 	void Info(std::ostream& ost) const override;
+	//Get function
 	TStatePower GetState() const override;
+	//Set function
 	void SetState(TStatePower const& state) override;
 	
 private:

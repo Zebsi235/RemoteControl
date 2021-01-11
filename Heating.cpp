@@ -12,7 +12,8 @@ using namespace std;
 void Heating::Info(std::ostream& ost) const
 {
 	ost << "Heating is ";
-
+	//Prints the information
+	//if the Heating is on or off
 	switch(mState){
 		case TStatePower::eOn: ost << "on" << endl;
 			break;
@@ -21,11 +22,14 @@ void Heating::Info(std::ostream& ost) const
 	}
 }
 
+//returns the state of the Heating
 TStatePower Heating::GetState() const
 {
 	return mState;
 }
 
+//chages the state of Heating if a button is
+//pressed on the remote
 void Heating::SetState(TStatePower const& state)
 {
 	mState = state;

@@ -12,7 +12,8 @@ using namespace std;
 void StereoCD::Info(std::ostream& ost) const
 {
 	ost << "CD is ";
-
+	//Prints the information
+	//if the StereoCD is open or closed
 	switch (mStateCD)
 	{
 	case TStateCD::eOpen: ost << "open" << endl;
@@ -26,16 +27,21 @@ void StereoCD::SetState(TStatePower const& state)
 {
 }
 
+//returns that the Device is off
+//funtion does not get called
+//but has to be implemented
 TStatePower StereoCD::GetState() const
 {
 	return TStatePower::eOff;
 }
 
+//Sets the state of StereoCD to open or close
 void StereoCD::SetStateCD(TStateCD const& state)
 {
 	mStateCD = state;
 }
 
+//returns if StereoCD is open or closed
 TStateCD StereoCD::GetStateCD() const
 {
 	return mStateCD;

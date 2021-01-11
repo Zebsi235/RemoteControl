@@ -20,7 +20,9 @@ public:
 	void Undo() const override;
 
 private:
+	//member of device for the command
 	Device::SPtr mDevice;
+	//stores previous state
 	TStatePower mPrevState;
 };
 

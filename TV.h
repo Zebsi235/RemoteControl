@@ -15,8 +15,11 @@
 class TV : public Device, public Object
 {
 public:
+	//prints device info to given ostream
 	void Info(std::ostream& ost) const override;
+	//sets the power state
 	void SetState(TStatePower const& state) override;
+	//returns current power state
 	TStatePower GetState() const override;
 
 	using SPtr = std::shared_ptr<TV>;

@@ -15,9 +15,11 @@
 class Slot : public Object
 {
 public:
+	//Set functions
 	void SetOn(Command::SPtr const& cmd);
 	void SetOff(Command::SPtr const& cmd);
 	void SetName(std::string const& name);
+	//Get functions
 	Command::SPtr GetOn() const;
 	Command::SPtr GetOff() const;
 	std::string GetName() const;

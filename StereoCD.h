@@ -16,10 +16,13 @@
 class StereoCD : public Device, public Object
 {
 public:
+	//Print function
 	void Info(std::ostream& ost) const override;
+	//Set functions
 	void SetState(TStatePower const& state) override;
-	TStatePower GetState() const override;
 	void SetStateCD(TStateCD const& state);
+	//Get functions
+	TStatePower GetState() const override;
 	TStateCD GetStateCD() const;
 
 	using SPtr = std::shared_ptr<StereoCD>;

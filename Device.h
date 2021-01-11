@@ -14,10 +14,13 @@
 class Device
 {
 public:
+	//prints the info of the device into the given ostream
 	virtual void Info(std::ostream& ost) const = 0;
+	//sets power state of device
 	virtual void SetState(TStatePower const& state) = 0;
+	//returns power state of device
 	virtual TStatePower GetState() const = 0;
-
+	//virtual destructor
 	virtual ~Device() = default;
 
 	using SPtr = std::shared_ptr<Device>;

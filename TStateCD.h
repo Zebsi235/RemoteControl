@@ -10,6 +10,8 @@
 
 enum class TStateCD
 {
+	//the two states of the StereoCD 
+	//either opened or closed
 	eOpen,
 	eClosed
 };

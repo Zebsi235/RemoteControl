@@ -18,6 +18,9 @@
 class Stereo : public Device, public Object
 {
 public:
+	
+	//it is possible to create a stereo device with or 
+	//without a cd drive.
 	Stereo(StereoCD::SPtr const& cd);
 	void Info(std::ostream& ost) const override;
 	void SetState(TStatePower const& state) override;

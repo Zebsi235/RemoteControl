@@ -19,13 +19,19 @@ class RemoteControl : public Object
 {
 public:
 	RemoteControl();
+	//method to execute the on-command of given slotNr
 	void OnButtonPressed(size_t const slotNr);
+	//method to execute the off-command of given slotNr
 	void OffButtonPressed(size_t const slotNr);
+	//method to revert the last command
 	void UndoButtonPressed();
+	//method to programm a device to a given slot
 	void ProgramSlot(std::string const& slotName, size_t const slotNr, 
 	Command::SPtr const& onCmd, Command::SPtr const& offCmd);
 
+	//prints all slots to the given ostream
 	void PrintRemoteInfo(std::ostream& ost);
+	//returns the name of slotNr
 	std::string GetSlotName(size_t const slotNr);
 
 	using SPtr = std::shared_ptr<RemoteControl>;

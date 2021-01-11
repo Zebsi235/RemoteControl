@@ -91,6 +91,7 @@ int main()
 						ferni->OffButtonPressed(slot);
 						break;
 					default:
+						cout << "wrong input!" << endl;
 						break;
 					}
 				}
@@ -106,6 +107,7 @@ int main()
 					client.PrintDeviceInfo(cout);
 					break;
 				default:
+					cout << "wrong input!" << endl;
 					break;
 				}
 			}

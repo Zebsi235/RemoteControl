@@ -21,7 +21,9 @@ public:
 	void Undo() const override;
 
 private:
+	//member of device for the command
 	StereoCD::SPtr mCD;
+	//stores previous state
 	TStateCD mPrevState;
 };
 

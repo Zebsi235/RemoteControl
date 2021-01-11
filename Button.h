@@ -14,7 +14,9 @@
 class Button: public Object
 {
 public:
+	//Set functions
 	void SetCmd(Command::SPtr const& cmd);
+	//Get functions
 	Command::SPtr GetCmd() const;
 
 private:

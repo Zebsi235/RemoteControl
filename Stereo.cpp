@@ -10,6 +10,7 @@
 
 using namespace std;
 
+//Custom C-Tor to create a stereo-device with cd drive
 Stereo::Stereo(StereoCD::SPtr const& cd)
 {
 	if (cd != nullptr)
@@ -21,7 +22,8 @@ Stereo::Stereo(StereoCD::SPtr const& cd)
 void Stereo::Info(std::ostream& ost) const
 {
 	ost << "Stereo is ";
-
+	//prints the current power state of the 
+	//stereo system
 	switch(mState){
 		case TStatePower::eOn: ost << "on ";
 			break;
@@ -29,11 +31,13 @@ void Stereo::Info(std::ostream& ost) const
 			break;
 	}
 
-
+	//if the member is different to nullpointer
+	//the stereo device has a cd drive
 	if (mCD_Unit != nullptr)
 	{
 		ost << "CD is ";
 
+		//prints the current state of the cd drive
 		switch (mCD_Unit->GetStateCD())
 		{
 		case TStateCD::eOpen: ost << "open" << endl;
@@ -50,15 +54,20 @@ void Stereo::Info(std::ostream& ost) const
 
 TStatePower Stereo::GetState() const
 {
+	//returns the current powerstate
 	return mState;
 }
 
 void Stereo::SetState(TStatePower const& state)
 {
+	//set the current powerstate to the given one
 	mState = state;
 
 	if (mCD_Unit != nullptr)
 	{
+		//if the stereo-device has a cd drive
+		//it will be truned on or off, depending on the 
+		//given powerstate.
 		if (state == TStatePower::eOn)
 		{
 			mCD_Unit->SetStateCD(TStateCD::eOpen);

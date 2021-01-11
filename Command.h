@@ -13,6 +13,7 @@
 class Command
 {
 public:
+	//pure virtual interface
 	virtual void Execute() = 0;
 	virtual void Undo() const = 0;
 	virtual ~Command() = default;

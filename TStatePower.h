@@ -10,6 +10,8 @@
 
 enum class TStatePower
 {
+	//the two states of the Devices
+	//either on or off
 	eOn,
 	eOff
 };
